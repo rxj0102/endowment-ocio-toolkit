@@ -1,0 +1,23 @@
+[project]
+name = "endowment-ocio-toolkit"
+version = "0.1.0"
+description = "Synthetic OCIO/endowment strategic asset allocation and portfolio oversight toolkit (demonstration only)."
+requires-python = ">=3.10"
+dependencies = [
+    "numpy>=1.24",
+    "pandas>=2.0",
+    "scipy>=1.10",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.4", "mypy>=1.5", "ruff>=0.4"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+
+[tool.mypy]
+python_version = "3.10"
+ignore_missing_imports = true
