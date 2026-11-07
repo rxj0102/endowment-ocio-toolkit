@@ -1,5 +1,7 @@
 # endowment-ocio-toolkit
 
+[![CI](https://github.com/rxj0102/endowment-ocio-toolkit/actions/workflows/ci.yml/badge.svg)](https://github.com/rxj0102/endowment-ocio-toolkit/actions/workflows/ci.yml)
+
 > **DISCLAIMER: 100% synthetic data.** Every capital market assumption,
 > manager return stream, fund cash flow, and simulation in this repository is
 > fabricated for demonstration purposes. Nothing here represents a real
