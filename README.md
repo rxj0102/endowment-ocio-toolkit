@@ -201,3 +201,29 @@ matter for this domain, not just code coverage:
   data generator is seeded for reproducibility.
 - Type hints and docstrings are used throughout; `mypy` and `ruff` are both
   clean against the `endowment_ocio_toolkit` package.
+
+## Reproducibility
+
+### Data availability
+
+No external data is downloaded. Inputs are generated or parameterised inside the code.
+
+### Computational requirements
+
+- Python 3.12.3. Every dependency version is pinned in `uv.lock`.
+- Checked on Linux x86_64 with 2 CPU cores and 8 GB RAM. No GPU is needed.
+
+```bash
+pip install uv     # once
+uv sync            # installs the exact pinned environment
+uv run pytest -q   # runs the test suite
+```
+
+### Runtime
+
+The test suite (54 tests) finishes in about 15 seconds on the machine above, including any data downloads it triggers.
+
+### Citation
+
+Citation metadata is in `CITATION.cff`. GitHub turns it into a Cite this repository button on the repo page.
+
